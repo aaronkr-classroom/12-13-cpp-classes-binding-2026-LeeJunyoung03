@@ -5,9 +5,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include"core.h"
+#include"Grad.h"
 
 using namespace std;
 
+//생성자
+S
 class Student_info {
 public: // 접근할 수 있는 함수
     // ## 생성자 정의 ############
@@ -40,3 +44,15 @@ private: // 숨기고 싶은 변수
 bool compare(const Student_info&, const Student_info&);
 
 #endif
+
+//연산자 추가
+Student_info& Student_info::operator=(const Student_info& s) {
+    if (&s != this) {
+        delete cp;
+        if (s.cp)
+            cp = s.cp->clone();
+        else
+            cp = 0;
+    }
+    return *this;
+}

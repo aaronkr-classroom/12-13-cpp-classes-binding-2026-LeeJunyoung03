@@ -5,7 +5,10 @@
 #include "Student_info.h"
 
 using namespace std;
-
+//생성자
+Student_info::Student_info(const Student_info& s) :cp(0) {
+    if (s.cp)cp = s.cp->clone();
+}
 // 빈 생성자 
 Student_info::Student_info() : midterm(0), final(0) { }
 

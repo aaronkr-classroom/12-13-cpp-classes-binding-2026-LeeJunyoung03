@@ -128,15 +128,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\11-abstract-data-types-2026-LeeJunyoung03\week12\vec.h" />
+    <ClInclude Include="core.h" />
+    <ClInclude Include="Grad.h" />
+    <ClInclude Include="grade.h" />
     <ClInclude Include="lis.h" />
+    <ClInclude Include="median.h" />
+    <ClInclude Include="median_T.h" />
     <ClInclude Include="str.h" />
+    <ClInclude Include="Student_info.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="core.cpp" />
+    <ClCompile Include="core_main.cpp" />
+    <ClCompile Include="grad.cpp" />
+    <ClCompile Include="grade.cpp" />
     <ClCompile Include="Lis_main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="median.cpp" />
     <ClCompile Include="str.cpp" />
     <ClCompile Include="str_main.cpp" />
+    <ClCompile Include="Student_info.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
